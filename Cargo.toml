@@ -1,0 +1,11 @@
+[package]
+name = "randring"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cairo-rs = { version = "0.15.12", features = ["xcb"] }
+x11 = { version = "2.19.1", features = ["xft", "xlib_xcb"] }
+x11rb = {version = "0.10", features = ["allow-unsafe-code", "randr"] }
